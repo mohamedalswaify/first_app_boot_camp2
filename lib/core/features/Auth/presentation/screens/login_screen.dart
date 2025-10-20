@@ -1,3 +1,4 @@
+import 'package:first_app_boot_camp2/core/features/Auth/presentation/screens/register_screen.dart';
 import 'package:flutter/material.dart';
 
 import '../../../../../All_screens/home_screen.dart';
@@ -95,6 +96,17 @@ class _LoginScreenState extends State<LoginScreen> {
                     loading: _loading,
                     onPressed: _onLogin,
                   ),
+                  const SizedBox(height: 16),
+                  PrimaryButton(
+                      text: 'Register',
+                      loading: _loading,
+                      onPressed: () {
+                        // الانتقال للـ HomeScreen
+                        Navigator.of(context).push(
+                          MaterialPageRoute(
+                              builder: (_) => const RegisterScreen()),
+                        );
+                      }),
                 ],
               ),
             ),
