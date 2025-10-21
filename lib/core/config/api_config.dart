@@ -5,5 +5,7 @@ class ApiConfig {
   static const String loginEndpoint = "$baseUrl/Auth/login";
   static const String registerEndpoint = "$baseUrl/Auth/register";
   static const String categoriesEndpoint =
-      '$baseUrl/Categories/GetAllCategories';
+      "$baseUrl/Categories/GetAllCategories";
+  static const String productsEndpoint = "$baseUrl/Products";
+  static const String productByIdEndpoint = '$baseUrl/products';
 }
